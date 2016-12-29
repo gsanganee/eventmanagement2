@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adapted from JavaScript &amp; jQuery - Chapter 13: Form Enhancement and Validation - Reacting to the submit Event</title>
+    <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.3.custom.min.css" />
+    <link rel="stylesheet" href="css/c13.css" />
+  </head>
+  <body>
+    <div class="container login">
+      <form id="form" action="login-submit.php" method="post">
+        <div class="one-third column">
+          <img src="img/logo.png" alt="logo" id="logo" />
+        </div>
+        <div class="two-thirds column" id="main">
+          <fieldset id="fieldSet">
+            <legend>Login</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required/>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required/>
+            <input type="submit" id="submit" value="Login" />
+          </fieldset>
+          <div id="content">
+          </div>
+        </div><!-- .two-thirds -->
+      </form>
+      <a href="validation.html">Register</a>
+    </div><!-- .container -->
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>
